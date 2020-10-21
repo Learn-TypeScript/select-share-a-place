@@ -31,9 +31,9 @@ Take care of billing account in Google Cloud Platform, after finishing this app.
 
 - google.maps... will be available globaly, because of new `<script defer async src="https://maps.googleapis.com/maps/api/js?key=API_KEY"></script>` we set in `index.html`, but TS doesn't know that. So we use `declare` like: `declare var google: any`
 
-- To add a marker got to [Adding a Google Map with a Marker to Your Website](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)
+- To add a marker go to [Adding a Google Map with a Marker to Your Website](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)
 
-- To avoid typos in google code (e.g. `new google.map.Map` instead of `new google.maps.Map`), use [@types/googlemaps](https://www.npmjs.com/package/@types/googlemaps). Now we don't even need to `declare var google: any`.
+- To avoid typos in google code (e.g. map instead of maps: `new google.map.Map` instead of `new google.maps.Map`), use [@types/googlemaps](https://www.npmjs.com/package/@types/googlemaps). Now we don't even need to `declare var google: any`.
 
 * Check also: [Working with Maps without a Credit Card](https://www.udemy.com/course/understanding-typescript/learn/lecture/16996108#content)
 
